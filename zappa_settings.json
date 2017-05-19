@@ -1,0 +1,13 @@
+{
+    "dev": {
+        "app_function": "run.app", 
+        "aws_region": "us-west-2", 
+        "profile_name": "domainsandbox", 
+        "s3_bucket": "zappa-seefood-domain-us",
+        "extra_permissions": [{
+	      "Effect":"Allow",
+	      "Action": ["rekognition:CompareFaces","rekognition:DetectFaces","rekognition:DetectLabels","rekognition:ListCollections","rekognition:ListFaces","rekognition:SearchFaces","rekognition:SearchFacesByImage"],
+	      "Resource":"*"
+	    }]
+    }
+}
