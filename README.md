@@ -3,6 +3,9 @@
 ## What is the purpose of this?
 I got a bit bored last night and decided to replicate the functionality of Jian Yang's app from Silicon Valley using the AWS Rekognition API.
 
+[![GODDAMMIT JIAN YANG](https://img.youtube.com/vi/FNyi3nAuLb0/0.jpg)]
+(https://www.youtube.com/watch?v=FNyi3nAuLb0)
+
 ## Prerequisites
 1. AWS Account to host the Slackbot
 2. AWS Account must have access to Regions where Rekognition is available (us-east-1, us-west-2, eu-west-1)
