@@ -3,7 +3,6 @@ import downloadImage
 import slackMessage
 
 rekognitionConnection = boto3.client('rekognition')
-isHotdog = False
 
 def rekognise(imageUrl):
     image = downloadImage.getImage(imageUrl)
@@ -18,6 +17,5 @@ def rekImage(requestForm):
 def getIsHotdog(response):
     for label in response['Labels']:
         if label['Name'] == "Hot Dog":
-            isHotdog = True
             return "Is " + label['Name']
     return "Not Hot Dog"
